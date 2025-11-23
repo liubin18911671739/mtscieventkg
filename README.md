@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 > 如果 pip 拉不到对应的 PyTorch 轮子，请先安装官方提供的版本（示例 CPU）：  
 > `pip install torch==2.9.1` （或按照 https://pytorch.org 指南选择与你平台/加速器匹配的指令），再执行 `pip install -r requirements.txt`。
-> 如 faiss-cpu 版本不可用，可改为 `pip install faiss-cpu==1.11.0`（已默认设置）。
+> 如 faiss-cpu 版本不可用，可改为 `pip install faiss-cpu==1.11.0`（已默认设置）；networkx 如 3.3 拉取失败，可使用 `networkx==3.2.1`。
 
 执行顺序（若无真实数据，脚本会自动生成 dummy 数据跑通全链路）：
 

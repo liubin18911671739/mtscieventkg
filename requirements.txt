@@ -8,7 +8,7 @@ numpy==1.26.4
 tqdm==4.66.4
 pyyaml==6.0.2
 requests==2.32.3
-networkx==3.3
+networkx==3.2.1
 scikit-learn==1.5.1
 openai==1.51.2
 ujson==5.10.0

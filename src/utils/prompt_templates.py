@@ -38,7 +38,10 @@ Return only a JSON array, nothing else.
 """
 
 
-def build_prompt(title: str, abstract: str, lang: str, year: int | str) -> str:
+from typing import Union
+
+
+def build_prompt(title: str, abstract: str, lang: str, year: Union[int, str]) -> str:
     """Fill the prompt template."""
     return SCIEVENT_PROMPT.format(
         schema=SCIEVENT_JSON_SCHEMA,
